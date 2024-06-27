@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <button onclick="handleClicked('Cursor')">Cursor</button>
+            <button onclick="handleClicked('Dot')">Dot</button>
+            <button onclick="handleClicked('Point')">Point</button>
+            <div class="dropdown">
+                <button onclick="myFunction('myDropdown')" class="dropbtn">Line</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <button onclick="handleClicked('Line Segment')">Line Segment</button>
+                  <button onclick="handleClicked('DDA')">DDA</button>
+                  <button onclick="handleClicked('Bresenham Line')">Bresenham Line</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction('myDropdown2')" class="dropbtn">Circle</button>
+                <div id="myDropdown2" class="dropdown-content">
+                  <button onclick="handleClicked('Implicit Circle')">Implicit Cirle</button>
+                  <button onclick="handleClicked('Bresenham Circle')">Bresenham Circle</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction('myDropdown3')" class="dropbtn">Ellipse</button>
+                <div id="myDropdown3" class="dropdown-content">
+                  <button onclick="handleClicked('Implicit Ellipse')">Implicit Ellipse</button>
+                  <button onclick="handleClicked('Bresenham Ellipse')">Bresenham Ellipse</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction('myDropdown4')" class="dropbtn">Transformation</button>
+                <div id="myDropdown4" class="dropdown-content">
+                  <button onclick="handleClicked('Translation')">Translation</button>
+                  <button onclick="handleClicked('Reflection')">Reflection</button>
+                </div>
+            </div>
+            <button onclick="handleClicked('Cliping')">Cliping</button>
+            <button onclick="handleClicked('Clear')" >Clear</button>
+            <p>Note:For Cliping, need to push buton1 and drag,then release it </p>
+            <p>Note:For Translation, need to push button 1 and drag,then release it,then it will appear input to pixel which how much translate</p>
+            <p id="selected" style="display:block;position:absolute;bottom: 0px;" >Selected:</p>
+            
+        </div>
+
+        <div id="content"class="content">
+
+            <canvas style="position:absolute;z-index:-1;background-color: bisque;" id="canvas1" height="695" width="1015"></canvas>
+            <canvas style="position:absolute;z-index:1;" id="canvas2" height="695" width="1015"></canvas>
+            <div style="margin-left: 1040px;">
+                <h4>Computer Graphics CS451</h4>
+                <p> Oğuzhan Göksu</p>
+                <p>Student ID: 190201002</p>
+                
+            </div>
+
+        </div>
+
+    </body>
+    <script src="app.js">
+
+    </script>
+</html>
