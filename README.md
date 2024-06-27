@@ -3,4 +3,4 @@ In this project, I developed a basic paint-like application using HTML, JavaScri
 
 
 
-[Konuşma.docx](https://github.com/user-attachments/files/16015785/Konusma.docx)
+![Uploading Ekran görüntüsü 2024-06-27 143735.png…]()
